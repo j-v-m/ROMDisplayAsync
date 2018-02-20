@@ -1,4 +1,4 @@
-#ROMDisplay (FEB 2018)
+# ROMDisplay (FEB 2018)
 
 This project illustrates one prototyped solution for a landscaped-oriented large screen display at the Royal Ontario Museum.
 
@@ -8,7 +8,7 @@ This app makes use of the Alamofire 4.0 pod, and thus, a pod install will be req
 
 Thus far, the app has been tested only using the iPhone 8 Plus simulator, and has not been tested on an actual iPhone. As such, we recommend this configuration when running.
 
-#Approach
+# Approach
 
 This app uses a MediaItemPopulator to asynchronous poll a REST api (https://media-rest-service.herokuapp.com/media) for media item metadata.
 
