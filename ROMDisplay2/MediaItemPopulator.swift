@@ -17,18 +17,19 @@ extension Notification.Name {
 
 class MediaItemPopulator {
     
-    let MediaItemsUrl = "https://media-rest-service.herokuapp.com/media"
-    let queue = DispatchQueue(label: "serialQueue")
+    static let MediaItemsUrl = "https://media-rest-service.herokuapp.com/media"
     
-    var mediaItems = [MediaItem]()
+    internal var mediaItems = [MediaItem]()
+
+    private let queue = DispatchQueue(label: "serialQueue")
     
     func start() {
         getMediaItemsList()
     }
 
-    func getMediaItemsList() {
+    internal func getMediaItemsList(callback: (([MediaItem]) -> Void)? = nil) {
         
-        Alamofire.request(MediaItemsUrl)
+        Alamofire.request(MediaItemPopulator.MediaItemsUrl)
             .validate(statusCode: 200..<201)
             .validate(contentType: ["application/json"])
             .responseJSON(queue: queue) { response in
@@ -54,6 +55,10 @@ class MediaItemPopulator {
                                 print("\(mediaItem.index): \(mediaItem.id)")
                             }
                             
+                            if callback != nil {
+                                callback!(self.mediaItems)
+                            }
+                            
                             // Fire a notification containing the media items
                             NotificationCenter.default.post(
                                 name: .modelChange, object: nil, userInfo: ["media_items" : self.mediaItems])
@@ -62,39 +67,46 @@ class MediaItemPopulator {
                             self.getMediaItems()
                         }
                         else {
+                            if callback != nil {
+                                callback!(self.mediaItems)
+                            }
+                            
                             print ("Error after GET... no media items")
-                            self.retryGetMediaItemsList()
+                            self.retryGetMediaItemsList(callback: callback)
                         }
                     
                     case .failure:
+                        if callback != nil {
+                            callback!(self.mediaItems)
+                        }
+                        
                         print ("Error with GET... failure result")
-                        self.retryGetMediaItemsList()
+                        self.retryGetMediaItemsList(callback: callback)
                 }
         }
-        
     }
     
-    private func retryGetMediaItemsList() {
+    private func retryGetMediaItemsList(callback: (([MediaItem]) -> Void)? = nil) {
         
         print("Waiting to retry...")
         queue.asyncAfter(deadline: DispatchTime.now()+5){
             print("Retrying...")
-            self.getMediaItemsList()
+            self.getMediaItemsList(callback: callback)
         }
     }
     
-    func getMediaItems() {
+    private func getMediaItems() {
         
         for mediaItem in mediaItems {
             getMediaItem(mediaItem: mediaItem)
         }
     }
     
-    func getMediaItem(mediaItem: MediaItem) {
+    internal func getMediaItem(mediaItem: MediaItem, callback: (([MediaItem]) -> Void)? = nil) {
         
         print("GET media item #\(mediaItem.index)")
         
-        Alamofire.request("\(MediaItemsUrl)/\(mediaItem.id)")
+        Alamofire.request("\(MediaItemPopulator.MediaItemsUrl)/\(mediaItem.id)")
             .validate(statusCode: 200..<201)
             .validate(contentType: ["application/json"])
             .responseJSON(queue: queue) { response in
@@ -116,22 +128,51 @@ class MediaItemPopulator {
                                 print("#\(mediaItem.index) URL: \(String(describing:urlString))")
                                 
                                 mediaItem.url = urlString
+                                
+                                if callback != nil {
+                                    callback!(self.mediaItems)
+                                }
+                                
                                 NotificationCenter.default.post(
                                     name: .modelChange, object: nil, userInfo: ["media_items" : self.mediaItems])
                             }
                             else {
                                 print ("Error... no URL in media item dictionary")
+                                
+                                if callback != nil {
+                                    callback!(self.mediaItems)
+                                }
+                                
                                 self.retryGetMediaItem(mediaItem: mediaItem)
                             }
                         }
                         else {
                             print ("Error after GET... no media item")
+                            
+                            if callback != nil {
+                                callback!(self.mediaItems)
+                            }
+                            
                             self.retryGetMediaItem(mediaItem: mediaItem)
                         }
+                    }
+                    else {
+                        print ("Error after GET... no media item")
+                        
+                        if callback != nil {
+                            callback!(self.mediaItems)
+                        }
+                        
+                        self.retryGetMediaItem(mediaItem: mediaItem)
                     }
                     
                 case .failure:
                     print ("Error with GET... failure result")
+                    
+                    if callback != nil {
+                        callback!(self.mediaItems)
+                    }
+                    
                     self.retryGetMediaItem(mediaItem: mediaItem)
                 }
         }
