@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		123A19D8203B882400079DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A19D7203B882400079DFA /* AppDelegate.swift */; };
-		123A19DA203B882400079DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A19D9203B882400079DFA /* ViewController.swift */; };
+		123A19DA203B882400079DFA /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A19D9203B882400079DFA /* PlayerViewController.swift */; };
 		123A19DD203B882400079DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A19DB203B882400079DFA /* Main.storyboard */; };
 		123A19DF203B882400079DFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123A19DE203B882400079DFA /* Assets.xcassets */; };
 		123A19E2203B882400079DFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123A19E0203B882400079DFA /* LaunchScreen.storyboard */; };
 		123A19ED203B882500079DFA /* ROMDisplay2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A19EC203B882500079DFA /* ROMDisplay2Tests.swift */; };
 		123A19F8203B882500079DFA /* ROMDisplay2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A19F7203B882500079DFA /* ROMDisplay2UITests.swift */; };
+		123A1A06203B894300079DFA /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A1A05203B894300079DFA /* MediaItem.swift */; };
+		123A1A08203BA68A00079DFA /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 123A1A07203BA68A00079DFA /* Podfile */; };
+		123A1A0A203BA77800079DFA /* MediaItemPopulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123A1A09203BA77800079DFA /* MediaItemPopulator.swift */; };
+		49B99D925415C12A2E698B51 /* Pods_ROMDisplay2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39BCCFEF5572CF9DEB551B4C /* Pods_ROMDisplay2Tests.framework */; };
+		5C50D4D5F09FEFDEC8157B75 /* Pods_ROMDisplay2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B9C662F23B785B92F4136D /* Pods_ROMDisplay2UITests.framework */; };
+		D3ACFBC235D5F40EB6D99606 /* Pods_ROMDisplay2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBA036E1FB276ED0FD9D8D0 /* Pods_ROMDisplay2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0BE771CCD5CE314A74E9D9 /* Pods-ROMDisplay2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROMDisplay2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROMDisplay2UITests/Pods-ROMDisplay2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		123A19D4203B882400079DFA /* ROMDisplay2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROMDisplay2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123A19D7203B882400079DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		123A19D9203B882400079DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		123A19D9203B882400079DFA /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		123A19DC203B882400079DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		123A19DE203B882400079DFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		123A19E1203B882400079DFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,17 @@
 		123A19F3203B882500079DFA /* ROMDisplay2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ROMDisplay2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		123A19F7203B882500079DFA /* ROMDisplay2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROMDisplay2UITests.swift; sourceTree = "<group>"; };
 		123A19F9203B882500079DFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		123A1A05203B894300079DFA /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		123A1A07203BA68A00079DFA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		123A1A09203BA77800079DFA /* MediaItemPopulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemPopulator.swift; sourceTree = "<group>"; };
+		35523E54A9AD2A606960E5C3 /* Pods-ROMDisplay2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROMDisplay2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROMDisplay2/Pods-ROMDisplay2.debug.xcconfig"; sourceTree = "<group>"; };
+		39BCCFEF5572CF9DEB551B4C /* Pods_ROMDisplay2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROMDisplay2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C2E467C5936C7FD38174BB9 /* Pods-ROMDisplay2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROMDisplay2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROMDisplay2Tests/Pods-ROMDisplay2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5EBA036E1FB276ED0FD9D8D0 /* Pods_ROMDisplay2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROMDisplay2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C362E985FDEFEBE2AB0EC8 /* Pods-ROMDisplay2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROMDisplay2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROMDisplay2Tests/Pods-ROMDisplay2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2B9C662F23B785B92F4136D /* Pods_ROMDisplay2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ROMDisplay2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF19AE5CF22AA56EA854D982 /* Pods-ROMDisplay2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROMDisplay2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ROMDisplay2UITests/Pods-ROMDisplay2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB47A5E1DBFA6DF7CFEA7BFC /* Pods-ROMDisplay2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ROMDisplay2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ROMDisplay2/Pods-ROMDisplay2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3ACFBC235D5F40EB6D99606 /* Pods_ROMDisplay2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B99D925415C12A2E698B51 /* Pods_ROMDisplay2Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C50D4D5F09FEFDEC8157B75 /* Pods_ROMDisplay2UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +98,13 @@
 		123A19CB203B882400079DFA = {
 			isa = PBXGroup;
 			children = (
+				123A1A07203BA68A00079DFA /* Podfile */,
 				123A19D6203B882400079DFA /* ROMDisplay2 */,
 				123A19EB203B882500079DFA /* ROMDisplay2Tests */,
 				123A19F6203B882500079DFA /* ROMDisplay2UITests */,
 				123A19D5203B882400079DFA /* Products */,
+				48128B96F8D7DEEF960293C2 /* Pods */,
+				83FBF3A24619B6EC6FB69462 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				123A19D7203B882400079DFA /* AppDelegate.swift */,
-				123A19D9203B882400079DFA /* ViewController.swift */,
+				123A1A05203B894300079DFA /* MediaItem.swift */,
+				123A1A09203BA77800079DFA /* MediaItemPopulator.swift */,
+				123A19D9203B882400079DFA /* PlayerViewController.swift */,
 				123A19DB203B882400079DFA /* Main.storyboard */,
 				123A19DE203B882400079DFA /* Assets.xcassets */,
 				123A19E0203B882400079DFA /* LaunchScreen.storyboard */,
@@ -125,6 +151,29 @@
 			path = ROMDisplay2UITests;
 			sourceTree = "<group>";
 		};
+		48128B96F8D7DEEF960293C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35523E54A9AD2A606960E5C3 /* Pods-ROMDisplay2.debug.xcconfig */,
+				DB47A5E1DBFA6DF7CFEA7BFC /* Pods-ROMDisplay2.release.xcconfig */,
+				97C362E985FDEFEBE2AB0EC8 /* Pods-ROMDisplay2Tests.debug.xcconfig */,
+				3C2E467C5936C7FD38174BB9 /* Pods-ROMDisplay2Tests.release.xcconfig */,
+				CF19AE5CF22AA56EA854D982 /* Pods-ROMDisplay2UITests.debug.xcconfig */,
+				0D0BE771CCD5CE314A74E9D9 /* Pods-ROMDisplay2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83FBF3A24619B6EC6FB69462 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EBA036E1FB276ED0FD9D8D0 /* Pods_ROMDisplay2.framework */,
+				39BCCFEF5572CF9DEB551B4C /* Pods_ROMDisplay2Tests.framework */,
+				B2B9C662F23B785B92F4136D /* Pods_ROMDisplay2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 123A19FC203B882500079DFA /* Build configuration list for PBXNativeTarget "ROMDisplay2" */;
 			buildPhases = (
+				C02EE27BED3866C92CAF3816 /* [CP] Check Pods Manifest.lock */,
 				123A19D0203B882400079DFA /* Sources */,
 				123A19D1203B882400079DFA /* Frameworks */,
 				123A19D2203B882400079DFA /* Resources */,
+				A394B547ADCF9D373F80B149 /* [CP] Embed Pods Frameworks */,
+				56BCFA210A0DB0A0543176D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 123A19FF203B882500079DFA /* Build configuration list for PBXNativeTarget "ROMDisplay2Tests" */;
 			buildPhases = (
+				98E6BD13094EE616A24D1C38 /* [CP] Check Pods Manifest.lock */,
 				123A19E4203B882500079DFA /* Sources */,
 				123A19E5203B882500079DFA /* Frameworks */,
 				123A19E6203B882500079DFA /* Resources */,
+				2B4041E7025F4DEFC9AACF29 /* [CP] Embed Pods Frameworks */,
+				E23E54F0FACF842C78753ABA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 123A1A02203B882500079DFA /* Build configuration list for PBXNativeTarget "ROMDisplay2UITests" */;
 			buildPhases = (
+				FD7F0D65A32601112F7BB09E /* [CP] Check Pods Manifest.lock */,
 				123A19EF203B882500079DFA /* Sources */,
 				123A19F0203B882500079DFA /* Frameworks */,
 				123A19F1203B882500079DFA /* Resources */,
+				6FB0450FBA09AF3AAFF92F74 /* [CP] Embed Pods Frameworks */,
+				05F5FE3AAA6281E6100F1055 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +292,7 @@
 			files = (
 				123A19E2203B882400079DFA /* LaunchScreen.storyboard in Resources */,
 				123A19DF203B882400079DFA /* Assets.xcassets in Resources */,
+				123A1A08203BA68A00079DFA /* Podfile in Resources */,
 				123A19DD203B882400079DFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +313,175 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05F5FE3AAA6281E6100F1055 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2UITests/Pods-ROMDisplay2UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B4041E7025F4DEFC9AACF29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2Tests/Pods-ROMDisplay2Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2Tests/Pods-ROMDisplay2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56BCFA210A0DB0A0543176D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2/Pods-ROMDisplay2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB0450FBA09AF3AAFF92F74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2UITests/Pods-ROMDisplay2UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2UITests/Pods-ROMDisplay2UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98E6BD13094EE616A24D1C38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROMDisplay2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A394B547ADCF9D373F80B149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2/Pods-ROMDisplay2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2/Pods-ROMDisplay2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C02EE27BED3866C92CAF3816 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROMDisplay2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E23E54F0FACF842C78753ABA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ROMDisplay2Tests/Pods-ROMDisplay2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD7F0D65A32601112F7BB09E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ROMDisplay2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		123A19D0203B882400079DFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				123A19DA203B882400079DFA /* ViewController.swift in Sources */,
+				123A1A0A203BA77800079DFA /* MediaItemPopulator.swift in Sources */,
+				123A19DA203B882400079DFA /* PlayerViewController.swift in Sources */,
 				123A19D8203B882400079DFA /* AppDelegate.swift in Sources */,
+				123A1A06203B894300079DFA /* MediaItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +645,7 @@
 		};
 		123A19FD203B882500079DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35523E54A9AD2A606960E5C3 /* Pods-ROMDisplay2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +660,7 @@
 		};
 		123A19FE203B882500079DFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB47A5E1DBFA6DF7CFEA7BFC /* Pods-ROMDisplay2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +675,7 @@
 		};
 		123A1A00203B882500079DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C362E985FDEFEBE2AB0EC8 /* Pods-ROMDisplay2Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +692,7 @@
 		};
 		123A1A01203B882500079DFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2E467C5936C7FD38174BB9 /* Pods-ROMDisplay2Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +709,7 @@
 		};
 		123A1A03203B882500079DFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF19AE5CF22AA56EA854D982 /* Pods-ROMDisplay2UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +725,7 @@
 		};
 		123A1A04203B882500079DFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0BE771CCD5CE314A74E9D9 /* Pods-ROMDisplay2UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
