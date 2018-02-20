@@ -18,6 +18,16 @@ class PlayerViewController: UIViewController {
 
     var mutex = pthread_mutex_t()
     
+    // Set the orientation of the app to Landscape
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscapeLeft
+    }
+    
+    // Set the orientation of the app to Landscape
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
